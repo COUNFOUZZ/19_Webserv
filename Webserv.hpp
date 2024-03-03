@@ -10,8 +10,6 @@ class Webserv {
     private:
         std::string _pathDefaultConfFile;
 
-        std::ifstream    checkConfigFile(void) const;
-
         class FileCannotBeOpen : public std::exception {
             public:
                 const char* what(void) const throw();
